@@ -1,0 +1,18 @@
+Coding task:
+
+Create an environment (e.g., conda, docker) and directory tree where one could perform the following tasks:
+
+    -Load the files on the data folder
+    -Extract the following data files:
+        timestamp
+        hear rate: HR
+        respiratory rate: RR
+        Acceleration: acc
+        ECG: PR, QRS, QT
+    -Perform an analysis of the current data which you consider useful for understanding it and explain your approach 
+    (e.g., Heart rate variability, Heart rate per hour over the day, or actigraphy).
+    -Find correlation coefficients between data fields over time-windows over the day (e.g. day time vs. night time or hourly)
+    -Perform unsupervised data clustering over the HR and RR data and visualize the results.
+
+Considerations for your code and our discussion. Imagine that what I am sending is a set of files for a single device and a single person, 
+but consider the code to be useful if: 1. you have 200 people 2. You have 10 devices producing similar data structures 3. You have these data per day for 30 days
