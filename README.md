@@ -13,22 +13,22 @@ conda activate scai
 
 ├── device_01
 │   ├── user_001
-│   │   ├── day_1.csv
-│   │   ├── day_2.csv
+│   │   ├── ecg_day_1.csv
+│   │   ├── ecg_day_2.csv
 │   │   └── ...
 │   ├── user_002
-│   │   ├── day_1.csv
-│   │   ├── day_2.csv
+│   │   ├── ecg_day_1.csv
+│   │   ├── ecg_day_2.csv
 │   │   └── ...
 │   └── ...
 ├── device_02
 │   ├── user_001
-│   │   ├── day_1.csv
-│   │   ├── day_2.csv
+│   │   ├── rr_day_1.csv
+│   │   ├── rr_day_2.csv
 │   │   └── ...
 │   ├── user_002
-│   │   ├── day_1.csv
-│   │   ├── day_2.csv
+│   │   ├── rr_day_1.csv
+│   │   ├── rr_day_2.csv
 │   │   └── ...
 │   └── ...
 
