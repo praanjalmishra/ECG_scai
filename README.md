@@ -52,6 +52,16 @@ cd ECG_scai
 - **Interval Calculation**: Compute PR, QRS, and QT intervals from detected peaks.
 - **Visualization**: Plot various aspects of the ECG signal and detected features.
 
+## Analysis
+
+- **Approach**: 
+  - We begin by loading ECG data from CSV files, specifying the `device`, `user` and `days`.
+  - The data is then processed to remove noise using a bandpass filter.
+  - Peaks in the filtered signal are detected to compute heart rate and analyze waveform intervals (PR, QRS, QT).
+  - Visualizations are generated to illustrate the ECG signal, detected peaks, and waveform intervals.
+  - Finally, heart rate variability (HRV) is calculated to assess the variability in heartbeat intervals
+  - Finally, all the data is dumped as a `intervals.json`
+
 ### 4. HR and RR analysis
 
 `HR_RR_Analysis.ipynb` contains a Python class `HealthDataLoader` designed for loading and analyzing health data including Heart Rate (HR) and Respiratory Rate (RR).
