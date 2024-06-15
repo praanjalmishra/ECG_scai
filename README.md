@@ -1,4 +1,4 @@
-### 1. Setup Conda environment
+## 1. Setup Conda environment
 
 ```shell
 conda env create -f environment.yml
@@ -7,8 +7,15 @@ conda activate scai
 git clone https://github.com/praanjalmishra/ECG_scai.git
 cd ECG_scai
 ```
+### Dependencies
+- `numpy`
+- `matplotlib`
+- `seaborn`
+- `pandas`
+- `scipy`
+- `tqdm`
 
-### 2. Hierarchy of the Data Strucure
+## 2. Hierarchy of the Data Strucure
 
 
 ```bash
@@ -38,12 +45,12 @@ cd ECG_scai
 
 ```
 
-### 3. ECG Analysis Tool
+## 3. ECG Analysis Tool
 
 `ECG_Analysis.ipynb` contains a Python class `ECGAnalysis` designed for analyzing ECG data. The class provides various functionalities: for loading ECG data, filtering it, detecting peaks, computing heart rate, analyzing waveform intervals (PR, QRS, QT), and calculating heart rate variability (HRV).
 
 
-## Features
+### Features
 - **Data Loading**: Load ECG data from CSV files stored in a specified directory structure.
 - **Signal Processing**: Filter ECG signals using a Butterworth bandpass filter.
 - **Peak Detection**: Identify peaks in the filtered ECG signal.
@@ -52,7 +59,7 @@ cd ECG_scai
 - **Interval Calculation**: Compute PR, QRS, and QT intervals from detected peaks.
 - **Visualization**: Plot various aspects of the ECG signal and detected features.
 
-## Analysis
+### Analysis
 
 - **Approach**: 
   - We begin by loading ECG data from CSV files, specifying the `device`, `user` and `days`.
@@ -62,11 +69,11 @@ cd ECG_scai
   - Finally, heart rate variability (HRV) is calculated to assess the variability in heartbeat intervals
   - Finally, all the data is dumped as a `intervals.json`
 
-### 4. HR and RR analysis
+## 4. HR and RR analysis
 
 `HR_RR_Analysis.ipynb` contains a Python class `HealthDataLoader` designed for loading and analyzing health data including Heart Rate (HR) and Respiratory Rate (RR).
 
-## Features
+### Features
 - **Data Loading**: Load HR and RR data from CSV files based on specified device, user, and days.
 - **Data Preprocessing**: Convert date columns, handle missing values, and replace zeros with computed means.
 - **Data Analysis**: Analyze trends in HR and RR over time, including daily averages and variations by hour.
